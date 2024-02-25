@@ -14,7 +14,7 @@ public class BasePage {
         LOG.info("Start test");
         System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Webdrivers//chromedriver121.exe");
         driver = new ChromeDriver();
-        String url = "https://www.pcgarage.ro/";
+        String url = "https://www.universalnutrition.ro/";
         driver.get(url);
 
         LOG.info("Open browser maximize");

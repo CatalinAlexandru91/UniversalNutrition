@@ -19,23 +19,65 @@ public class LogInPage extends BasePage {
         return instance;
     }
 
-    private By logo = By.id("logo");
-    private By topMenu = By.id("topmenu");
+    private By logo = By.xpath("//img[@class='logo img-responsive']");
+    private By searchBar = By.id("search_query_top");
+    private By myAccountButton = By.xpath("//a[text()='Contul meu']");
+    private By inputEmailAddress = By.id("email_create");
+    private By createAccountbutton = By.id("SubmitCreate");
+    private By privacyPolicy = By.id("cgv");
+    private By privacyPolicy2 = By.id("customer_privacy");
+
+
+    public boolean isSearchBarDisplayed() {
+        LOG.info("Verify if search bar is displayed");
+        return driver.findElement(searchBar).isDisplayed();
+
+    }
 
     public boolean isLogoDisplayed() {
         LOG.info("Verify if logo image is displayed");
         return driver.findElement(logo).isDisplayed();
+    }
+
+    public void clickMyAccountButton() {
+        LOG.info("Click 'My Account' button");
+        driver.findElement(myAccountButton).click();
 
     }
 
-    public boolean isTopMenuDisplayed() {
-        LOG.info("Verify if 'Top menu' button is displayed");
-        return driver.findElement(topMenu).isDisplayed();
+    public void insertEmailAddress(String emailaddress) {
+        LOG.info("Insert email address");
+        driver.findElement(inputEmailAddress).sendKeys(emailaddress);
+    }
 
+    public void clickPrivacyPolicyBox() {
+        LOG.info("Click privacy policy box");
+        driver.findElement(privacyPolicy).click();
 
     }
 
+    public void clickCreateAccountButton() {
+        LOG.info("Click 'Create Account' button");
+        driver.findElement(createAccountbutton).click();
+
+    }
+
+    public void clickSecondPrivacyPolicyBox() {
+        LOG.info("Click second privacy policy box");
+        driver.findElement(privacyPolicy2).click();
+
+
+    }
 }
+
+
+
+
+
+
+
+
+
 
 
 
