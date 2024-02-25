@@ -17,7 +17,7 @@ public class BasePage {
         String url = "https://www.pcgarage.ro/";
         driver.get(url);
 
-        LOG.info("Open browder maximize");
+        LOG.info("Open browser maximize");
         driver.manage().window().maximize();
     }
 
@@ -38,6 +38,13 @@ public class BasePage {
         return baseurl;
     }
 
+    public static void sleep(long ms) {
+        try {
+            Thread.sleep(ms);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 
 
 }
