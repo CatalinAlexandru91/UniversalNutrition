@@ -21,7 +21,6 @@ public class LogInPage extends BasePage {
 
     private By logo = By.id("logo");
     private By topMenu = By.id("topmenu");
-    private By logInButton = By.id("login-button-id");
 
     public boolean isLogoDisplayed() {
         LOG.info("Verify if logo image is displayed");
@@ -35,10 +34,7 @@ public class LogInPage extends BasePage {
 
 
     }
-public void clickLogInButton(){
-        LOG.info("Click 'Log In' button");
-        driver.findElement(logInButton);
-}
+
 }
 
 

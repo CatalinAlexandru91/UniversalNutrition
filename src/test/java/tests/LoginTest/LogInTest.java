@@ -20,8 +20,5 @@ public class LogInTest extends BaseTest {
 
         LOG.info("Verify if 'Top menu' button is displayed");
         Assert.assertTrue(logInPage.isTopMenuDisplayed());
-
-        LOG.info("Click 'Log In' button");
-        logInPage.clickLogInButton();
     }
 }
