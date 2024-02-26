@@ -13,13 +13,13 @@ public class RegisterTest extends BaseTest {
     private Object sleep;
 
 
-    String emailaddress = "proteine2@gmail.com";
+    String emailaddress = "proteine3@gmail.com";
     String firstName = "Ion";
     String lastName = "Popescu";
     String password = "proteine123";
 
     @Test
-    public void logIn() {
+    public void registerAccount() {
 
         LOG.info("Verify if search bar is displayed");
         Assert.assertTrue(registerPage.isSearchBarDisplayed(), "Logo is not displayed");
