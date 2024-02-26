@@ -27,7 +27,7 @@ public class BasePage {
     }
 
     public static String returnBaseUrl() {
-        return "https://www.pcgarage.ro/";
+        return "https://www.universalnutrition.ro/";
     }
 
     public static String getBaseUrl() {

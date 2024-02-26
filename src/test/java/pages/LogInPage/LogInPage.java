@@ -19,4 +19,13 @@ public class LogInPage extends BasePage {
         }
         return instance;
     }
+
+
+
+
+
 }
+
+
+
+

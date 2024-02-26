@@ -22,7 +22,7 @@ public class RegisterTest extends BaseTest {
     public void registerAccount() {
 
         LOG.info("Verify if search bar is displayed");
-        Assert.assertTrue(registerPage.isSearchBarDisplayed(), "Logo is not displayed");
+        Assert.assertTrue(registerPage.isSearchBarDisplayed(), "Search bar is not displayed");
 
         LOG.info("Verify if logo is displayed");
         Assert.assertTrue(registerPage.isLogoDisplayed(), "Logo is not displayed");
